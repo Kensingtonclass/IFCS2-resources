@@ -1,3 +1,4 @@
+print('💂🏰')
 print("Welcome to the City Adventure Game!")
 print("In this game, you'll embark on an exciting journey through different cities.")
 print("To navigate through the story, simply type your choices as they appear.")
