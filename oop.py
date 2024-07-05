@@ -6,11 +6,13 @@ class CityAdventureGame:
             "manchester": "Welcome Mancunian! You find yourself at the heart of Manchester, surrounded by its iconic red-brick buildings.",
             "london": "Welcome Londoner! You find yourself amidst the hustle and bustle of the capital city.",
             "bristol": "Welcome Bristolian! You find yourself in Bristol, a city steeped in maritime history.",
+            "canberra": "welcome Australian! here you find yourself in Australia a city full of life!."
         }
         self.city_landmarks = {
             "manchester": ["Manchester City Library", "Old Trafford"],
             "london": ["Tower of London", "Hyde Park"],
             "bristol": ["SS Great Britain", "Clifton Suspension Bridge"],
+            "canberra":["National Zoo and Aquarium", "National Museum of Australia"]
         }
 
     def greet_user(self):
