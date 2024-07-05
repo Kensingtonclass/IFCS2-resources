@@ -1,7 +1,6 @@
 import tkinter as tk
 import random
 
-
 class ColourChanger(tk.Tk):
     def __init__(self):
         super().__init__()  # Initialize the parent class, tk.Tk
@@ -18,10 +17,16 @@ class ColourChanger(tk.Tk):
     
     def change_colour(self):  # Event handler for button click event
         colours = ['red', 'blue', 'green', 'yellow', 'orange', 'pink', 'cyan', 'white', 'black']
-        colour = random.choice(colours)  # Choose a random colour from the list
-        self.configure(bg=colour)  # Set the background colour of the window to the chosen colour
+         while True:
+            colour = random.choice(colours)
+            if colour != self.previous_colour:
+                break  # Exit the loop when a new colour is found
 
-
-if __name__ == "__main__":
+        self.previous_colour = colour
+        self.configure(bg=colour)
+      colour = random.choice(colours)  # Choose a random colour from the list
+     self.configure(bg=colour)  # Set the background colour of the window to the chosen colour
+     
+if_name__ == "__main__":
     app = ColourChanger()
     app.mainloop()  # Start the Tkinter event loop
